@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">SriRitvik Yellamilli</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">.about()</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">.experience()</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">.projects()</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">.contact()</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+            <div class="section__pic-container">
+                <figure class="header__me click">
+                    <a href="https://www.linkedin.com/in/sriritvik-yellamilli/" target="_blank">
+                        <img src="./assets/me-transformed.png" class="header__me--border" alt="">
+                    </a>
+                    </figure>
+            </div>
+      <div class="section__text">
+        <p class="section__text__p1"><span class="element"></span></p>
+        <h1 class="title"> I'm SriRitvik Yellamilli</h1>
+        <p class="section__text__p2">Rising Sohomore in HS</p>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sriritvik-yellamilli/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Pineapplespace789'"
+          />
+        </div>
+        <script>
+          var typed = new Typed('.element', {
+              strings: ["Hello,", "Hola,", "Hallo,","Ciao,","Halo,","Cześć,","నమస్తే,"],
+              typeSpeed: 30,
+              backSpeed: 30, 
+              loop: true
+          })
+      </script>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>IT/Engineering Intern @KPMG<br />SWE Intern @FICO <br/> SWE Fellow @Headstarter AI</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Brown University '25<br />B.Sc. Computer Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Growing up in a low-income household where my family didn't 
+              have the luxury of vacations and extravagant experiences, 
+              I found my escape in Sci-Fi movies like <i>Terminator</i>, 
+              <i>Interstellar</i>, and <i>Ex Machina</i> on our family's cassette 
+              player. These films sparked my imagination and instilled a 
+              fascination with technology's potential to reshape the 
+              world. From the dream of exploring distant galaxies to 
+              envisioning a society enriched by advanced A.I., I was 
+              inspired to pursue a career in software engineering. <br />
+              <br/>
+              Today, I channel that childhood wonder and curiosity 
+              into developing innovative solutions, eager to contribute 
+              to the technological advancements that can create a better,
+               more connected world. My journey is fueled by a passion 
+               for exploration and a commitment to harnessing technology's
+                power to solve real-world problems.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Firebase</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+<div class="about-containers">
+  <div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/sea-monster-picture.png"
+      alt="Project 1"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">Sea Monster Crowdfunding Hub</h2>
+  <div class="project-info">
+    <p class="project-description">A crowdfunding platform for sea monster enthusiasts to fund their dream projects.</p>
+    <div class="tech-stack">
+      <span class="tech">HTML</span>
+      <span class="tech">CSS</span>
+      <span class="tech">JavaScript</span>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/SaulLopezLucas/web102_prework'"
+    >
+      Github
+    </button>
+  </div>
+</div>
+
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/flix-picture.png"
+      alt="Project 2"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">Flix</h2>
+  <div class="project-info">
+    <p class="project-description">An app for discovering and tracking movies based on user preferences. Users can browse an extensive database of films</p>
+    <div class="tech-stack">
+      <span class="tech">Swift</span>
+      <span class="tech">UIKit</span>
+      <span class="tech">Combine</span>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/SaulLopezLucas/Flix-Movie-App'"
+    >
+      Github
+    </button>
+  </div>
+</div>
+
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/parstagram-picture.png"
+      alt="Project 3"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">Parstagram</h2>
+  <div class="project-info">
+    <p class="project-description">A dynamic social media 
+      platform designed to enhance user interaction through a visually 
+      engaging interface. Inspired by Instagram</p>
+    <div class="tech-stack">
+      <span class="tech">Swift</span>
+      <span class="tech">UIKit</span>
+      <span class="tech">Combine</span>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/YourUsername/YourRepo'"
+    >
+      Github
+    </button>
+  </div>
+</div>
+</div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:saullopezlucasmail@gmail.com">saullopezlucas@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saul-lopez-lucas/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">.about()</a></li>
+            <li><a href="#experience">.experience()</a></li>
+            <li><a href="#projects">.projects()</a></li>
+            <li><a href="#contact">.contact()</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
